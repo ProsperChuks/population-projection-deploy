@@ -1,0 +1,121 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"><title>Population Estimate and Projection</title><meta property="og:image" content="assets/img/density.png"><meta name="description" content="DataSource: WorldBank"><meta property="og:type" content="website"><link rel="icon" type="image/png" sizes="700x450" href="assets/img/annual%20pop%20growth.png"><link rel="icon" type="image/png" sizes="1440x648" href="assets/img/density.png"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css"><link rel="stylesheet" href="assets/css/styles.min.css"></head><body><nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="transform: skew(0deg);box-shadow: 0px 0px 10px 0px var(--bs-purple);transform-origin: center;position: fixed;width: 100%;top: 0;"><div class="container"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navcol-1"><style>
+    .data-theme {
+        color: #9A97F3;
+        font: #e1e1ff;
+        background-color: #161625;
+    }
+    
+    .theme-switch-wrapper {
+      display: flex;
+      align-items: center;
+    }
+    .theme-switch {
+      display: inline-block;
+      height: 34px;
+      position: relative;
+      width: 60px;
+    }
+
+    .theme-switch input {
+      display:none;
+    }
+
+    .slider {
+      background-color: #ccc;
+      bottom: 0;
+      cursor: pointer;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: .4s;
+    }
+
+    .slider:before {
+      background-color: #fff;
+      bottom: 4px;
+      content: "";
+      height: 26px;
+      left: 4px;
+      position: absolute;
+      transition: .4s;
+      width: 26px;
+    }
+
+    input:checked + .slider {
+      background-color: #161625;
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
+
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
+</style>
+
+<div class="theme-switch-wrapper">
+       <label class="theme-switch" for="checkbox">
+    <input type="checkbox" id="checkbox" onclick="myFunction()"/>
+    <div class="slider round"></div>
+  </label>
+</div>
+
+<script>
+    function myFunction() {
+       var element = document.body;
+       element.classList.toggle("data-theme");
+    }
+</script><ul class="navbar-nav me-auto" style="margin-right: 0px !important;padding-left: 37%;width: 704px;"><li class="nav-item"><a class="nav-link" onclick="nav1()" href="#">Analysis</a></li><li class="nav-item"><a class="nav-link text-center" href="#" onclick="nav2()">Projections</a></li></ul><a class="ms-auto" href="https://github.com/ProsperChuks/Population-Estimate-and-Projection" target="_blank"><i class="fa fa-github ms-auto" style="font-size: 36px;"></i></a></div></div></nav><div id="analysis"><div class="container" style="margin-top: 96px;"><div class="row"><div class="col-md-12"><h3 style="margin-top: 0px;">World Population: Past and Present</h3></div></div></div><center>
+    <iframe src='worlds-population.html' title="World's Population"></iframe>
+</center><div class="container"><div class="row"><div class="col"><p>In 1960, human population hit third billion and the next billion (fourth) in 15 years (1975), and the fifth billion in only 13 years (1987).<br>NB: It took 30 years for world population to hit the third billion and 130 years to hit the second</p><ul><li>During&nbsp;the 20th century,&nbsp;the population in the world grew from&nbsp;1.65 billion to 6 billion.<br></li><li>In 1970, there weren't half as many people&nbsp;in the world as there are now.<br></li></ul></div></div></div><p><br><br></p><div class="container"><div class="row"><div class="col-md-12"><h3>Growth Rate</h3></div></div></div><center>
+    <iframe src='annual population growth-rate.html' title="Growth Rate"></iframe>
+</center><div class="container"><div class="row"><div class="col-md-12"><p>Population in the world is currently (2021) growing at a rate of 1.03% (likely to fall to 1.01% by December 2021) per year, down from (1.03% in 2020, 1.08% in 2019, and 1.09% in 2018).&nbsp;The current average population increase is estimated at 81 million people per year.<br><br>The annual growth rate reached its peak in the late 1960s, when it was at around 2%.&nbsp;The rate of increase has almost halved since then, and will continue to decline in the coming years.<br><br>Due to the decreasing growth rate, world population will continue to grow in this 21st century, but at a much slower rate compared to the 20th century.&nbsp;World population has doubled (100% increase) in 40 years from 1959&nbsp;(3 billion) to 1999 (6 billion).<br><br>Our <a href="#">world population projections</a>&nbsp;indicate that world population will reach 9 billion persons in the year 2050.<br></p></div></div></div><p><br><br></p><div class="container"><div class="row"><div class="col-md-12"><h3>World Population Density (people/km²)<br></h3><p><br>Population density map of the world showing countries.<br></p></div></div></div><img src="assets/img/density.png" style="width: 100%;"><div class="container"><div class="row"><div class="col-md-12"><h3>Crude Birth Rate</h3></div></div></div><center>
+    <iframe src='cbr.html' title="Crude Birth Rate"></iframe>
+</center><p><br><br></p><div class="container"><div class="row"><div class="col-md-12"><h3>Crude Death Rate</h3></div></div></div><center>
+    <iframe src='cdr.html' title="Crude Birth Rate"></iframe>
+</center></div><div id="forecast"><div class="container" style="margin-top: 96px;"><div class="row"><div class="col-md-12"><h3 style="margin-top: 0px;">World Population: Projection</h3></div></div></div><center>
+    <iframe src='population prediction.html' title="World's Population Prediction"></iframe>
+</center><p><br><br></p><div class="container"><div class="row"><div class="col-md-12"><h3>Growth Rate Projection</h3></div></div></div><center>
+    <iframe src='growth prediction.html' title="World's Growth Prediction"></iframe>
+</center><p><br><br></p><div class="container"><div class="row"><div class="col-md-12"><h3>Crude Birth Rate Projection</h3></div></div></div><center>
+    <iframe src='cbr prediction.html' title="World's Growth Prediction"></iframe>
+</center><p><br><br></p><div class="container"><div class="row"><div class="col-md-12"><h3>Crude Death Rate Projection<br></h3></div></div></div><center>
+    <iframe src='cdr prediction.html' title="World's Growth Prediction"></iframe>
+</center><div class="container"><div class="row"><div class="col-md-12"><h2>World Population Forecast (2020-2050)<br></h2></div></div></div><div class="container"><div class="row"><div class="col-md-12 few"><style>
+    table {
+        border-collapse: collapse;
+        border: 2px black solid;
+        font: 12px sans-serif;
+    }
+
+    td {
+        border: 1px black solid;
+        padding: 5px;
+    }
+</style>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+<script type="text/javascript"charset="utf-8">
+        d3.text("https://raw.githubusercontent.com/ProsperChuks/Population-Estimate-and-Projection/main/forecasts/prediction/World%20Population%20Projections.csv", function(data) {
+            var parsedCSV = d3.csv.parseRows(data);
+
+            var container = d3.select(".few")
+                .append("table")
+
+                .selectAll("tr")
+                    .data(parsedCSV).enter()
+                    .append("tr")
+
+                .selectAll("td")
+                    .data(function(d) { return d; }).enter()
+                    .append("td")
+                    .text(function(d) { return d; });
+        });
+</script></div></div></div></div><footer class="footer-basic"><p class="copyright">This Project is <a href="https://github.com/ProsperChuks/Population-Estimate-and-Projection/blob/main/LICENSE" target="_blank">GNU</a> Licensed</p></footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script><script src="assets/js/script.min.js"></script></body></html>

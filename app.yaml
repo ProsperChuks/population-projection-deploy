@@ -1,0 +1,6 @@
+env: flexible
+
+handlers:
+
+- url: /assets
+  static_dir: assets/
